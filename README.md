@@ -363,9 +363,9 @@ Coding
 
 ### Description
 Sinatra picks up a Linear issue (assign or @mention) or a labelled GitHub issue and works it end to end:
-- Clones the repo into a fresh sandbox, plans when the ticket is vague, implements, runs the test suite, and reviews its own diff before opening a draft PR.
-- Posts progress on the issue as it works and reworks the PR itself when a reviewer requests changes; a human merges.
-- Runs on the Claude or ChatGPT subscription you already pay for, on your own API key, or on hosted keys with no markup. Free tier is 5 tasks a day.
+- Clones the repo into its own sandbox, asks questions or proposes a plan when the ticket is vague, implements, runs the test suite, and reviews its own diff before marking the PR ready.
+- Posts progress on the issue as it works, takes messages mid-run, fixes failing CI, and reworks the PR when a reviewer requests changes; a human merges.
+- Runs on the Claude or ChatGPT subscription you already pay for, or your own API key; Sinatra never bills for model usage. Free: 1 task at a time, plus 1 queued, no daily limit.
 
 
 ### Links
